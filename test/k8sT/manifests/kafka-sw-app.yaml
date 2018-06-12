@@ -39,6 +39,7 @@ spec:
             port: 9092
           initialDelaySeconds: 5
           periodSeconds: 5
+          failureThreshold: 3
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
