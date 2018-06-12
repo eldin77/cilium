@@ -24,6 +24,11 @@ const (
 	PolicyLabelName = "io.cilium.k8s.policy.name"
 	// PolicyLabelNamespace is the policy's namespace set in k8s.
 	PolicyLabelNamespace = "io.cilium.k8s.policy.namespace"
+
+	// LabelIstioSidecarProxy is the label key added to the identity of any pod
+	// that has been injected by Istio with a Cilium-compatible sidecar proxy.
+	PolicyLabelIstioSidecarProxy = "io.cilium.k8s.policy.istiosidecarproxy"
+
 	// PodNamespaceMetaLabels is the label used to store the labels of the
 	// kubernetes namespace's labels.
 	PodNamespaceMetaLabels = "io.cilium.k8s.namespace.labels"
